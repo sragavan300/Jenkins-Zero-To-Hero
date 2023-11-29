@@ -14,7 +14,7 @@ pipeline {
     stage('Run Java Program') {
             steps {
                 sh 'java -version' // Display Java version
-                sh 'mvn exec:java -Dexec.mainClass="com.example.HelloWorldApp"' // Run the Java program
+                sh 'mvn exec:java -Dexec.mainClass="com.example.App"' // Run the Java program
             }
     
     stage('Front-end') {
